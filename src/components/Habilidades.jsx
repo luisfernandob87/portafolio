@@ -9,11 +9,29 @@ const Habilidades = () => {
   return (
     <section id="habilidades">
       <h4>Mis Habilidades</h4>
-      <img src={html} alt="logo_html" />
-      <img src={css} alt="logo_css" />
+      <div className="imgHabilidades">
+      <div className="img">
+        <img src={html} alt="logo_html" />
+        <h5>HTML</h5>
+        </div>
+      <div className="img">
+        <img src={css} alt="logo_css" />
+        <h5>CSS</h5>
+        </div>
+      <div className="img">
       <img src={javascript} alt="logo_javascript" />
+      <h5>JavaScript</h5>
+      </div>
+      <div className="img">
       <img src={react} alt="logo_react" />
+      <h5>React JS</h5>
+      </div>
+      <div className="img">
       <img src={figma} alt="logo_figma" />
+      <h5>Figma</h5>
+      </div>
+
+      </div>
     </section>
   );
 };

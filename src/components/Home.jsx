@@ -32,8 +32,8 @@ const Home = () => {
         <h3>Desarrollador Web Front End</h3>
       </div>
       <div className="enlacesHome">
-        <img src={linkedin} alt="logo_linkedin" />
-        <img src={mail} alt="logo_mail" />
+        <a href="https://www.linkedin.com/in/luis-morales-barillas/" target="_blank"><img src={linkedin} alt="logo_linkedin" /></a>
+        <a href="mailto:luisfernandob87@gmail.com"><img src={mail} alt="logo_mail" /></a>
       </div>
     </section>
   );

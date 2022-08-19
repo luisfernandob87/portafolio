@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <h4>Footer</h4>
+      <p>Copyright © 2022 Luis Morales </p>
     </footer>
   );
 };

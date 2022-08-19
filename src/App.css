@@ -33,8 +33,8 @@ a {
   justify-content: space-between;
   width: 100vw;
   padding-right: 1.5rem;
+  z-index: 1;
 }
-
 .logo {
   width: 8rem;
   padding: 1rem 0 1rem 1rem;
@@ -58,7 +58,6 @@ h1 {
   justify-items: center;
   align-items: center;
 }
-
 @media (max-width: 768px) {
   .containerAcercaDeMi {
     display: block;
@@ -106,9 +105,12 @@ h1 {
 .acercaDeMi {
   text-align: center;
   padding-bottom: 1.5rem;
+
 }
 .acercaDeMi img {
   max-width: 40%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .acercaDeMi p {
   margin: 0 auto;
@@ -118,7 +120,7 @@ h4 {
   font-size: x-large;
   padding-top: 1.5rem;
   text-align: center;
-  margin: 1rem 0 0 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 .acercaDeMi p {
   font-size: medium;
@@ -141,7 +143,7 @@ h1 span {
     transform: translateY(1px) rotate(2deg);
   }
 }
-h1:hover span {
+section:hover span {
   animation: bounce 0.6s;
 }
 @keyframes bounce {
@@ -212,18 +214,122 @@ h1 span:nth-child(14) {
   animation-delay: 0.65s;
 }
 /* EXPERIENCIA */
-.experiencia {
+.experiencia{
+  padding: 0 0 1.5rem 0;
+}
+table{
+  margin: 1.5rem auto;
+  border: 1px solid var(--color-secundary);
+  min-width: 90%;
+  border-collapse: collapse;
+}
+td{
+  border: 1px solid var(--color-secundary);
+  font-size:large;
   text-align: center;
 }
-.containerExperiencia {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+table tr:nth-child(1){
+  color: black;
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
 }
-hr {
-  color: var(--color-secundary);
+
+/* ANIMACION IMAGEN */
+.acercaDeMi:hover img{
+  animation: imgAnimada 5s infinite linear;
 }
-@media (max-width: 768px) {
-  .containerExperiencia {
-    display: inline-block;
+@keyframes imgAnimada {
+  0% {
+		transform: scale(1); 
+	}
+
+	50% {
+		transform: scale(1.1); 
+	}
+
+	100% {
+		transform: scale(1); 
+	}
+}
+/* HABILIDES */
+.imgHabilidades{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.imgHabilidades h5{
+  text-align: center;
+  font-size: medium;
+  margin-top: 0;
+}
+.imgHabilidades img{
+  max-width: 100px;
+}
+
+.img:hover img{
+  animation: imgHabilidades 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes imgHabilidades {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+/* PORTAFOLIO */
+#portafolio div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+#portafolio img{
+  border-radius: 10px;
+  max-width: 300px;
+}
+/* CONTACTO */
+#contacto div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+}
+#contacto img{
+  width: 80px;
   }
+/* FOOTER */
+footer p{
+  text-align: center;
+  font-size: medium;
 }
