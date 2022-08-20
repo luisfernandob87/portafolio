@@ -16,7 +16,7 @@ html {
 }
 nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 1.5rem;
 }
 .containerMenu {
@@ -58,7 +58,7 @@ h1 {
   font-size: xxx-large;
 }
 h2 {
-  font-size: x-large;
+  font-size: xx-large;
 }
 .containerAcercaDeMi {
   display: grid;
@@ -105,10 +105,18 @@ h2 {
 }
 .enlacesHome {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5rem;
 }
-
+.name {
+  display: inline;
+}
+@media (max-width: 460px) {
+  .name {
+    display: block;
+  }
+}
 /* ACERCA DE MI */
 .acercaDeMi {
   text-align: center;
@@ -121,16 +129,14 @@ h2 {
 }
 .acercaDeMi p {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 550px;
+  font-size: xx-large;
 }
 h4 {
-  font-size: x-large;
+  font-size: xx-large;
   padding-top: 1.5rem;
   text-align: center;
   margin: 1.5rem 0 1.5rem 0;
-}
-.acercaDeMi p {
-  font-size: medium;
 }
 /* animacion texto  */
 
@@ -232,7 +238,7 @@ table {
 }
 td {
   border: 1px solid var(--color-secundary);
-  font-size: large;
+  font-size: x-large;
   text-align: center;
 }
 table tr:nth-child(1) {
@@ -240,6 +246,7 @@ table tr:nth-child(1) {
   font-size: x-large;
   text-align: center;
   font-weight: bold;
+  background-color: white;
 }
 
 /* ANIMACION IMAGEN */

@@ -1,5 +1,5 @@
 import React from "react";
-import foto from "../img/foto.png";
+import foto from "../img/foto.svg";
 import moon from "../img/moon.svg";
 import lang from "../img/lang.svg";
 import linkedin from "../img/linkedin.svg";
@@ -16,20 +16,23 @@ const Home = () => {
         <img src={lang} alt="lenguaje" />
       </div>
       <div className="info">
-        {/* <img src={foto} alt="foto" /> */}
+        <img src={foto} alt="foto" />
         <h1>
-          Hola, soy <span>L</span>
-          <span>u</span>
-          <span>i</span>
-          <span>s</span>
-          <p style={{ display: "inline" }}> </p>
-          <span>M</span>
-          <span>o</span>
-          <span>r</span>
-          <span>a</span>
-          <span>l</span>
-          <span>e</span>
-          <span>s</span>
+          Hola, soy{" "}
+          <div className="name">
+            <span>L</span>
+            <span>u</span>
+            <span>i</span>
+            <span>s</span>
+            <p style={{ display: "inline" }}> </p>
+            <span>M</span>
+            <span>o</span>
+            <span>r</span>
+            <span>a</span>
+            <span>l</span>
+            <span>e</span>
+            <span>s</span>
+          </div>
         </h1>
         <h2>Desarrollador Web Front End</h2>
       </div>
