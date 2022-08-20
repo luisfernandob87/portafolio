@@ -16,7 +16,7 @@ html {
 }
 nav {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1.5rem;
 }
 .containerMenu {
@@ -26,6 +26,11 @@ nav {
 a {
   text-decoration: none;
   color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+a:hover {
+  color: black;
 }
 .containerNav {
   position: fixed;
@@ -50,7 +55,10 @@ a {
   display: none;
 }
 h1 {
-  font-size: xx-large;
+  font-size: xxx-large;
+}
+h2 {
+  font-size: x-large;
 }
 .containerAcercaDeMi {
   display: grid;
@@ -58,7 +66,7 @@ h1 {
   justify-items: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .containerAcercaDeMi {
     display: block;
   }
@@ -105,7 +113,6 @@ h1 {
 .acercaDeMi {
   text-align: center;
   padding-bottom: 1.5rem;
-
 }
 .acercaDeMi img {
   max-width: 40%;
@@ -214,21 +221,21 @@ h1 span:nth-child(14) {
   animation-delay: 0.65s;
 }
 /* EXPERIENCIA */
-.experiencia{
+.experiencia {
   padding: 0 0 1.5rem 0;
 }
-table{
+table {
   margin: 1.5rem auto;
   border: 1px solid var(--color-secundary);
   min-width: 90%;
   border-collapse: collapse;
 }
-td{
+td {
   border: 1px solid var(--color-secundary);
-  font-size:large;
+  font-size: large;
   text-align: center;
 }
-table tr:nth-child(1){
+table tr:nth-child(1) {
   color: black;
   font-size: x-large;
   text-align: center;
@@ -236,83 +243,82 @@ table tr:nth-child(1){
 }
 
 /* ANIMACION IMAGEN */
-.acercaDeMi:hover img{
+.acercaDeMi:hover img {
   animation: imgAnimada 5s infinite linear;
 }
 @keyframes imgAnimada {
   0% {
-		transform: scale(1); 
-	}
+    transform: scale(1);
+  }
 
-	50% {
-		transform: scale(1.1); 
-	}
+  50% {
+    transform: scale(1.1);
+  }
 
-	100% {
-		transform: scale(1); 
-	}
+  100% {
+    transform: scale(1);
+  }
 }
 /* HABILIDES */
-.imgHabilidades{
+.imgHabilidades {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3.5rem;
 }
-.imgHabilidades h5{
+.imgHabilidades h5 {
   text-align: center;
   font-size: medium;
   margin-top: 0;
 }
-.imgHabilidades img{
+.imgHabilidades img {
   max-width: 100px;
 }
 
-.img:hover img{
+.img:hover img {
   animation: imgHabilidades 2s ease 0s 1 normal forwards;
 }
 
-
 @keyframes imgHabilidades {
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 50%;
-	}
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
 
-	10% {
-		transform: rotate(8deg);
-	}
+  10% {
+    transform: rotate(8deg);
+  }
 
-	20%,
-	40%,
-	60% {
-		transform: rotate(-10deg);
-	}
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
 
-	30%,
-	50%,
-	70% {
-		transform: rotate(10deg);
-	}
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
 
-	80% {
-		transform: rotate(-8deg);
-	}
+  80% {
+    transform: rotate(-8deg);
+  }
 
-	90% {
-		transform: rotate(8deg);
-	}
+  90% {
+    transform: rotate(8deg);
+  }
 }
 /* PORTAFOLIO */
-#portafolio div{
+#portafolio div {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
   justify-content: center;
   padding-bottom: 1.5rem;
 }
-#portafolio img{
+#portafolio img {
   border-radius: 10px;
   max-width: 300px;
 }
@@ -325,11 +331,11 @@ table tr:nth-child(1){
   padding-bottom: 1.5rem;
   align-items: center;
 }
-#contacto img{
+#contacto img {
   width: 80px;
-  }
+}
 /* FOOTER */
-footer p{
+footer p {
   text-align: center;
   font-size: medium;
 }
