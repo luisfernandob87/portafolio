@@ -1,5 +1,5 @@
 import React from "react";
-import foto from "../img/foto.svg";
+import foto from "../img/avatar_con_ojos.svg";
 import moon from "../img/moon.svg";
 import lang from "../img/lang.svg";
 import linkedin from "../img/linkedin.svg";
@@ -16,7 +16,7 @@ const Home = () => {
         <img src={lang} alt="lenguaje" />
       </div>
       <div className="info">
-        <img src={foto} alt="foto" />
+        <img src={foto} alt="foto" id="fotoPerfil" />
         <h1>
           Hola, soy{" "}
           <div className="name">

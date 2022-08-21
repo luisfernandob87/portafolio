@@ -23,13 +23,13 @@ nav {
   display: flex;
   align-items: center;
 }
-a {
+nav a {
   text-decoration: none;
   color: white;
   font-size: x-large;
   font-weight: bold;
 }
-a:hover {
+nav a:hover {
   color: black;
 }
 .containerNav {
@@ -156,9 +156,10 @@ h1 span {
     transform: translateY(1px) rotate(2deg);
   }
 }
-section:hover span {
+h1:hover span {
   animation: bounce 0.6s;
 }
+
 @keyframes bounce {
   0% {
     transform: translate(0);
@@ -328,6 +329,18 @@ table tr:nth-child(1) {
 #portafolio img {
   border-radius: 10px;
   max-width: 300px;
+}
+.logo {
+  width: 5rem;
+}
+.containerPortafolio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+}
+h5 {
+  margin-bottom: 0;
 }
 /* CONTACTO */
 #contacto div {

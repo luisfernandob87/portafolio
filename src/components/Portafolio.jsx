@@ -1,20 +1,124 @@
 import React from "react";
-import tienda from '../img/tienda.png'
-import pokeapi from '../img/pokeapi.png'
-import rick from '../img/rick.png'
-import academloStore from '../img/academloStore.png'
-import bienesRaices from '../img/bienesRaices.png'
+import tienda from "../img/tienda.png";
+import pokeapi from "../img/pokeapi.png";
+import rick from "../img/rick.png";
+import academloStore from "../img/academloStore.png";
+import bienesRaices from "../img/bienesRaices.png";
+import html from "../img/html.svg";
+import css from "../img/css.svg";
+import react from "../img/react.svg";
+import redux from "../img/redux.svg";
+import javascript from "../img/javascript.svg";
+import git from "../img/github.svg";
+import web from "../img/internet.png";
 
 const Portafolio = () => {
   return (
     <section id="portafolio">
       <h4>Portafolio</h4>
       <div>
-      <img src={tienda} alt="imagen_portafolio"/>
-      <img src={pokeapi} alt="imagen_portafolio"/>
-      <img src={rick} alt="imagen_portafolio" />
-      <img src={academloStore} alt="imagen_portafolio" />
-      <img src={bienesRaices} alt="imagen_portafolio" />
+        <div className="containerPortafolio">
+          <h5>Tecnologías Utilizadas</h5>
+          <div className="logos">
+            <img className="logo" src={html} alt="logo" />
+            <img className="logo" src={css} alt="logo" />
+            <img className="logo" src={react} alt="logo" />
+            <img className="logo" src={redux} alt="logo" />
+          </div>
+          <img src={tienda} alt="imagen_portafolio" />
+          <div>
+            <a href="">
+              Repositorio
+              <img src={git} className="logo" alt="logo" />
+            </a>
+            <a href="">
+              {" "}
+              Página
+              <img src={web} className="logo" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div className="containerPortafolio">
+          <h5>Tecnologías Utilizadas</h5>
+          <div className="logos">
+            <img className="logo" src={html} alt="logo" />
+            <img className="logo" src={css} alt="logo" />
+            <img className="logo" src={react} alt="logo" />
+            <img className="logo" src={redux} alt="logo" />
+          </div>
+          <img src={pokeapi} alt="imagen_portafolio" />
+          <div>
+            <a href="">
+              Repositorio
+              <img src={git} className="logo" alt="logo" />
+            </a>
+            <a href="">
+              {" "}
+              Página
+              <img src={web} className="logo" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div className="containerPortafolio">
+          <h5>Tecnologías Utilizadas</h5>
+          <div className="logos">
+            <img className="logo" src={html} alt="logo" />
+            <img className="logo" src={css} alt="logo" />
+            <img className="logo" src={react} alt="logo" />
+          </div>
+          <img src={rick} alt="imagen_portafolio" />
+          <div>
+            <a href="">
+              Repositorio
+              <img src={git} className="logo" alt="logo" />
+            </a>
+            <a href="">
+              {" "}
+              Página
+              <img src={web} className="logo" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div className="containerPortafolio">
+          <h5>Tecnologías Utilizadas</h5>
+          <div className="logos">
+            <img className="logo" src={html} alt="logo" />
+            <img className="logo" src={css} alt="logo" />
+            <img className="logo" src={javascript} alt="logo" />
+          </div>
+          <img src={academloStore} alt="imagen_portafolio" />
+          <div>
+            <a href="">
+              Repositorio
+              <img src={git} className="logo" alt="logo" />
+            </a>
+            <a href="">
+              {" "}
+              Página
+              <img src={web} className="logo" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div className="containerPortafolio">
+          <h5>Tecnologías Utilizadas</h5>
+          <div className="logos">
+            <img className="logo" src={html} alt="logo" />
+            <img className="logo" src={css} alt="logo" />
+            <img className="logo" src={javascript} alt="logo" />
+          </div>
+          <img src={bienesRaices} alt="imagen_portafolio" />
+          <div>
+            <a href="">
+              Repositorio
+              <img src={git} className="logo" alt="logo" />
+            </a>
+            <a href="">
+              {" "}
+              Página
+              <img src={web} className="logo" alt="logo" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
