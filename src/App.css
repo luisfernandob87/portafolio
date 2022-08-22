@@ -43,6 +43,7 @@ nav a:hover {
   width: 3rem;
   height: 3rem;
 }
+
 .modoClaro {
   background-color: var(--color-primary);
   color: white;
@@ -340,7 +341,9 @@ table thead {
   max-width: 300px;
 }
 .logo {
-  width: 6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 5rem;
 }
 .containerPortafolio {
   display: flex;
@@ -355,6 +358,9 @@ table thead {
 h5 {
   margin-bottom: 0;
   margin-top: 1rem;
+}
+.containerPortafolio p{
+  margin: 0;
 }
 .accesos a{
   border: none;
