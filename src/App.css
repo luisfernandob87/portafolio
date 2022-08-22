@@ -258,7 +258,7 @@ table thead {
   background-color: white;
 }
 /* ANIMACION IMAGEN */
-.acercaDeMi:hover img {
+#acercaDeMi:hover img {
   animation: imgAnimada 5s infinite linear;
 }
 @keyframes imgAnimada {
@@ -361,6 +361,7 @@ h5 {
   background-color: var(--color-secundary);
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
