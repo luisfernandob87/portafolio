@@ -3,7 +3,7 @@ import programando from "../img/programando.svg";
 
 const AcercaDeMi = () => {
   return (
-    <section className="acercaDeMi modoClaro" id="acercaDeMi">
+    <section className="modoClaro" id="acercaDeMi">
       <h4>Acerca de mí</h4>
       <div className="containerAcercaDeMi">
         <p>

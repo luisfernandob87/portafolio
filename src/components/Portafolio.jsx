@@ -18,7 +18,7 @@ const Portafolio = () => {
       <h4>Portafolio</h4>
       <div>
         <div className="containerPortafolio">
-          <h5>Tecnologías Utilizadas</h5>
+          <h5><span>Tienda Virtual:</span> Tecnologías Utilizadas</h5>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
@@ -26,20 +26,13 @@ const Portafolio = () => {
             <img className="logo" src={redux} alt="logo" />
           </div>
           <img src={tienda} alt="imagen_portafolio" />
-          <div>
-            <a href="">
-              Repositorio
-              <img src={git} className="logo" alt="logo" />
-            </a>
-            <a href="">
-              {" "}
-              Página
-              <img src={web} className="logo" alt="logo" />
-            </a>
+          <div className="accesos">
+            <a href='https://github.com/luisfernandob87/react-store' target='_blank'><img src={git} alt="Logo_git" className="logo" />Repositorio</a>
+            <a href="https://react-max-barato.netlify.app/" target='_blank'><img src={web} alt="Logo_web" className="logo"/>Página</a>
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5>Tecnologías Utilizadas</h5>
+          <h5><span>Poke API:</span> Tecnologías Utilizadas</h5>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
@@ -47,76 +40,48 @@ const Portafolio = () => {
             <img className="logo" src={redux} alt="logo" />
           </div>
           <img src={pokeapi} alt="imagen_portafolio" />
-          <div>
-            <a href="">
-              Repositorio
-              <img src={git} className="logo" alt="logo" />
-            </a>
-            <a href="">
-              {" "}
-              Página
-              <img src={web} className="logo" alt="logo" />
-            </a>
+          <div className="accesos">
+            <a href="https://github.com/luisfernandob87/poke-api-react" target="_blank"><img src={git} alt="Logo_git" className="logo" />Repositorio</a>
+            <a href="https://poke-api-react-demo.netlify.app/" target="_blank"><img src={web} alt="Logo_web" className="logo"/>Página</a>
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5>Tecnologías Utilizadas</h5>
+          <h5><span>Rick and Morty API:</span> Tecnologías Utilizadas</h5>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
             <img className="logo" src={react} alt="logo" />
           </div>
           <img src={rick} alt="imagen_portafolio" />
-          <div>
-            <a href="">
-              Repositorio
-              <img src={git} className="logo" alt="logo" />
-            </a>
-            <a href="">
-              {" "}
-              Página
-              <img src={web} className="logo" alt="logo" />
-            </a>
+          <div className="accesos">
+            <a href="https://github.com/luisfernandob87/Rick-and-Morty-Wiki" target="_blank"><img src={git} alt="Logo_git" className="logo" />Repositorio</a>
+            <a href="https://react-rick-and-morty-wiki.netlify.app/" target="_blank"><img src={web} alt="Logo_web" className="logo"/>Página</a>
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5>Tecnologías Utilizadas</h5>
+          <h5><span>Tienda Academlo:</span> Tecnologías Utilizadas</h5>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
             <img className="logo" src={javascript} alt="logo" />
           </div>
           <img src={academloStore} alt="imagen_portafolio" />
-          <div>
-            <a href="">
-              Repositorio
-              <img src={git} className="logo" alt="logo" />
-            </a>
-            <a href="">
-              {" "}
-              Página
-              <img src={web} className="logo" alt="logo" />
-            </a>
+          <div className="accesos">
+            <a href="https://github.com/luisfernandob87/e-commerce" target='_blank'><img src={git} alt="Logo_git" className="logo" />Repositorio</a>
+            <a href="https://academlo-shop-demo.netlify.app/" target='_blank'><img src={web} alt="Logo_web" className="logo"/>Página</a>
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5>Tecnologías Utilizadas</h5>
+          <h5><span>Bienes Raices:</span> Tecnologías Utilizadas</h5>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
             <img className="logo" src={javascript} alt="logo" />
           </div>
           <img src={bienesRaices} alt="imagen_portafolio" />
-          <div>
-            <a href="">
-              Repositorio
-              <img src={git} className="logo" alt="logo" />
-            </a>
-            <a href="">
-              {" "}
-              Página
-              <img src={web} className="logo" alt="logo" />
-            </a>
+          <div className="accesos">
+            <a href="https://github.com/luisfernandob87/bienes_raices" target="_blank"><img src={git} alt="Logo_git" className="logo" />Repositorio</a>
+            <a href="https://bienes-raices-morales.netlify.app/" target="_blank"><img src={web} alt="Logo_web" className="logo"/>Página</a>
           </div>
         </div>
       </div>

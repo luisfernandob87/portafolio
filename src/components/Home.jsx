@@ -1,7 +1,5 @@
 import React from "react";
 import foto from "../img/avatar_con_ojos.svg";
-import moon from "../img/moon.svg";
-import lang from "../img/lang.svg";
 import linkedin from "../img/linkedin.svg";
 import mail from "../img/mail.svg";
 import pdf from "../img/pdf.png";
@@ -9,13 +7,8 @@ import curriculum from "../img/curriculum.pdf";
 
 const Home = () => {
   return (
-    <section className="home">
-      <div id="home">
-        <img src={moon} alt="dark_theme" />
-        <br />
-        <img src={lang} alt="lenguaje" />
-      </div>
-      <div className="info">
+    <section className="home" id="home">
+       <div className="info">
         <img src={foto} alt="foto" id="fotoPerfil" />
         <h1>
           Hola, soy{" "}

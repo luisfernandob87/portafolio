@@ -14,14 +14,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 nav {
   display: flex;
   gap: 2rem;
   padding: 1.5rem;
-}
-.containerMenu {
-  display: flex;
-  align-items: center;
 }
 nav a {
   text-decoration: none;
@@ -32,7 +29,7 @@ nav a {
 nav a:hover {
   color: black;
 }
-.containerNav {
+#containerNav {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -40,22 +37,29 @@ nav a:hover {
   padding-right: 1.5rem;
   z-index: 1;
 }
-.logo {
-  width: 8rem;
-  padding: 1rem 0 1rem 1rem;
+#containerNav button{
+  background-color: transparent;
+  border: none;
+  width: 3rem;
+  height: 3rem;
 }
 .modoClaro {
   background-color: var(--color-primary);
   color: white;
 }
 .modoOscuro {
+  background-color: var(--color-secundary-dark);
+}
+.modoOscuroSection{
   background-color: var(--color-primary-dark);
+  color: white;
 }
 .menu {
   display: none;
 }
 h1 {
-  font-size: xxx-large;
+  font-size: 4rem;
+  margin: 2.5rem auto;
 }
 h2 {
   font-size: xx-large;
@@ -81,14 +85,16 @@ h2 {
     display: none;
     align-items: flex-end;
     flex-direction: column;
+    
   }
   .containerMenu {
+    padding-top: 1rem;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
   }
   .containerMenu img {
-    margin: 3rem 1.5rem 0 0;
+    margin: 1rem 1.5rem 0 0;
     cursor: pointer;
   }
   .hidden {
@@ -101,7 +107,7 @@ h2 {
 /* HOME */
 .info {
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 9rem;
 }
 .enlacesHome {
   display: flex;
@@ -118,16 +124,16 @@ h2 {
   }
 }
 /* ACERCA DE MI */
-.acercaDeMi {
+#acercaDeMi {
   text-align: center;
   padding-bottom: 1.5rem;
 }
-.acercaDeMi img {
+#acercaDeMi img {
   max-width: 40%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.acercaDeMi p {
+#acercaDeMi p {
   margin: 0 auto;
   max-width: 550px;
   font-size: xx-large;
@@ -228,10 +234,12 @@ h1 span:nth-child(14) {
   animation-delay: 0.65s;
 }
 /* EXPERIENCIA */
-.experiencia {
-  padding: 0 0 1.5rem 0;
+.containerExperiencia{
+  display: flex;
+  justify-content: center;
 }
 table {
+  display: inline-table;
   margin: 1.5rem auto;
   border: 1px solid var(--color-secundary);
   min-width: 90%;
@@ -242,14 +250,13 @@ td {
   font-size: x-large;
   text-align: center;
 }
-table tr:nth-child(1) {
+table thead {
   color: black;
   font-size: x-large;
   text-align: center;
   font-weight: bold;
   background-color: white;
 }
-
 /* ANIMACION IMAGEN */
 .acercaDeMi:hover img {
   animation: imgAnimada 5s infinite linear;
@@ -322,26 +329,51 @@ table tr:nth-child(1) {
 #portafolio div {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 1rem;
   justify-content: center;
-  padding-bottom: 1.5rem;
+  
+}
+#portafolio span{
+  font-size: large;
 }
 #portafolio img {
-  border-radius: 10px;
   max-width: 300px;
 }
 .logo {
-  width: 5rem;
+  width: 6rem;
 }
 .containerPortafolio {
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: large;
+  max-height: fit-content;
+  border: var(--color-primary) 1px solid;
+  border-radius: 10px;
+
 }
 h5 {
   margin-bottom: 0;
+  margin-top: 1rem;
 }
+.accesos a{
+  border: none;
+  background-color: var(--color-secundary);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width:46%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+    box-shadow: 1px 0px 1px 0px rgba(0,0,0,0.75);
+    text-decoration: none;
+}
+.accesos a:hover{
+  background-color: var(--color-primary);
+}
+
 /* CONTACTO */
 #contacto div {
   display: flex;
@@ -358,4 +390,21 @@ h5 {
 footer p {
   text-align: center;
   font-size: medium;
+}
+
+/* ICONOS  */
+
+.luna{
+  background-image: url('./img/moon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  width: fit-content;
+}
+.sol{
+  background-image: url('./img/sun.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  width: fit-content;
 }
