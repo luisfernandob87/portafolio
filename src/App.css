@@ -37,7 +37,7 @@ nav a:hover {
   padding-right: 1.5rem;
   z-index: 1;
 }
-#containerNav button{
+#containerNav button {
   background-color: transparent;
   border: none;
   width: 3rem;
@@ -50,7 +50,7 @@ nav a:hover {
 .modoOscuro {
   background-color: var(--color-secundary-dark);
 }
-.modoOscuroSection{
+.modoOscuroSection {
   background-color: var(--color-primary-dark);
   color: white;
 }
@@ -85,7 +85,6 @@ h2 {
     display: none;
     align-items: flex-end;
     flex-direction: column;
-    
   }
   .containerMenu {
     padding-top: 1rem;
@@ -234,7 +233,7 @@ h1 span:nth-child(14) {
   animation-delay: 0.65s;
 }
 /* EXPERIENCIA */
-.containerExperiencia{
+.containerExperiencia {
   display: flex;
   justify-content: center;
 }
@@ -331,9 +330,8 @@ table thead {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  
 }
-#portafolio span{
+#portafolio span {
   font-size: large;
 }
 #portafolio img {
@@ -350,13 +348,15 @@ table thead {
   max-height: fit-content;
   border: var(--color-primary) 1px solid;
   border-radius: 10px;
-
 }
 h5 {
   margin-bottom: 0;
   margin-top: 1rem;
 }
-.accesos a{
+.accesos img {
+  width: 3rem;
+}
+.accesos a {
   border: none;
   background-color: var(--color-secundary);
   border-radius: 10px;
@@ -365,13 +365,13 @@ h5 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width:46%;
+  width: 46%;
   margin: 0 auto;
   margin-bottom: 1rem;
-    box-shadow: 1px 0px 1px 0px rgba(0,0,0,0.75);
-    text-decoration: none;
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
 }
-.accesos a:hover{
+.accesos a:hover {
   background-color: var(--color-primary);
 }
 
@@ -395,15 +395,15 @@ footer p {
 
 /* ICONOS  */
 
-.luna{
-  background-image: url('./img/moon.svg');
+.luna {
+  background-image: url("./img/moon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 3rem;
   width: fit-content;
 }
-.sol{
-  background-image: url('./img/sun.svg');
+.sol {
+  background-image: url("./img/sun.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 3rem;

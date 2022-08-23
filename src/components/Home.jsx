@@ -1,5 +1,5 @@
 import React from "react";
-import foto from "../img/avatar_con_ojos.svg";
+import foto from "../img/avatar_circular.svg";
 import linkedin from "../img/linkedin.svg";
 import mail from "../img/mail.svg";
 import pdf from "../img/pdf.png";
@@ -8,7 +8,7 @@ import curriculum from "../img/curriculum.pdf";
 const Home = () => {
   return (
     <section className="home" id="home">
-       <div className="info">
+      <div className="info">
         <img src={foto} alt="foto" id="fotoPerfil" />
         <h1>
           Hola, soy{" "}
