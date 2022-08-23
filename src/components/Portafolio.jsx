@@ -18,7 +18,8 @@ const Portafolio = () => {
       <h4>Portafolio</h4>
       <div>
         <div className="containerPortafolio">
-          <h5><span>Tienda Virtual:</span> Tecnologías Utilizadas</h5>
+          <h5><span>Tienda Virtual</span></h5>
+          <p>Tecnologías Utilizadas</p>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
@@ -32,7 +33,8 @@ const Portafolio = () => {
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5><span>Poke API:</span> Tecnologías Utilizadas</h5>
+          <h5><span>Poke API:</span></h5>
+          <p>Tecnologías Utilizadas</p>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
@@ -46,7 +48,8 @@ const Portafolio = () => {
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5><span>Rick and Morty API:</span> Tecnologías Utilizadas</h5>
+          <h5><span>Rick and Morty API:</span></h5>
+          <p>Tecnologías Utilizadas</p>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
@@ -59,7 +62,8 @@ const Portafolio = () => {
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5><span>Tienda Academlo:</span> Tecnologías Utilizadas</h5>
+          <h5><span>Tienda Academlo:</span></h5>
+          <p>Tecnologías Utilizadas</p>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
@@ -72,7 +76,8 @@ const Portafolio = () => {
           </div>
         </div>
         <div className="containerPortafolio">
-          <h5><span>Bienes Raices:</span> Tecnologías Utilizadas</h5>
+          <h5><span>Bienes Raices:</span></h5>
+          <p>Tecnologías Utilizadas</p>
           <div className="logos">
             <img className="logo" src={html} alt="logo" />
             <img className="logo" src={css} alt="logo" />
