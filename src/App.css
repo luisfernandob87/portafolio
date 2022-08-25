@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #0072ff;
+  --color-primary: #0487ab;
   --color-secundary: #00c6ff;
   --color-primary-dark: #283048;
   --color-secundary-dark: #859398;
@@ -8,13 +8,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: Calibri;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
+#nav{
+  align-items: center;
+}
 nav {
   display: flex;
   gap: 2rem;
@@ -22,20 +25,22 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: white;
-  font-size: x-large;
+  color: black;
+  font-size: large;
   font-weight: bold;
+
 }
 nav a:hover {
   color: black;
 }
-#containerNav {
-  position: fixed;
+header {
   display: flex;
   justify-content: space-between;
   width: 100vw;
   padding-right: 1.5rem;
   z-index: 1;
+  background-color: white;
+box-shadow: 0px 0.2px 4px 0px rgba(0, 0, 0, 0.75);
 }
 #containerNav button {
   background-color: transparent;
@@ -69,44 +74,13 @@ h2 {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  padding-bottom: 10rem;
 }
-@media (max-width: 992px) {
-  .containerAcercaDeMi {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
-  .menu {
-    display: flex;
-    justify-content: end;
-  }
-  nav {
-    display: none;
-    align-items: flex-end;
-    flex-direction: column;
-  }
-  .containerMenu {
-    padding-top: 1rem;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-  }
-  .containerMenu img {
-    margin: 1rem 1.5rem 0 0;
-    cursor: pointer;
-  }
-  .hidden {
-    display: flex;
-  }
-  .rotate {
-    transform: rotate(-90deg);
-  }
-}
+
 /* HOME */
 .info {
   text-align: center;
-  padding-top: 9rem;
+  padding-top: 5rem;
 }
 .enlacesHome {
   display: flex;
@@ -161,7 +135,7 @@ h1 span {
     transform: translateY(1px) rotate(2deg);
   }
 }
-h1:hover span {
+section:hover span {
   animation: bounce 0.6s;
 }
 
@@ -234,45 +208,39 @@ h1 span:nth-child(14) {
 }
 /* EXPERIENCIA */
 .containerExperiencia {
+  margin-top: -8rem;
   display: flex;
   justify-content: center;
-}
-table {
-  display: inline-table;
-  margin: 1.5rem auto;
-  border: 1px solid var(--color-secundary);
-  min-width: 90%;
-  border-collapse: collapse;
-}
-td {
-  border: 1px solid var(--color-secundary);
-  font-size: x-large;
   text-align: center;
 }
-table thead {
-  color: black;
-  font-size: x-large;
-  text-align: center;
-  font-weight: bold;
+
+.containerExperiencia img{
+  background-color: var(--color-secundary);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.containerExperiencia div{
   background-color: white;
+  width: 40rem;
+  height: 32rem;
+  border: 0.1px solid rgb(217, 217, 217);
 }
-/* ANIMACION IMAGEN */
-#acercaDeMi:hover img {
-  animation: imgAnimada 5s infinite linear;
+.containerExperiencia div:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-@keyframes imgAnimada {
-  0% {
-    transform: scale(1);
-  }
+.containerExperiencia div:last-of-type{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.containerExperiencia img{
+  margin-top: 1rem;
+}
+.containerExperiencia h5, p,li{
+  font-size: medium;
+}
 
-  50% {
-    transform: scale(1.1);
-  }
 
-  100% {
-    transform: scale(1);
-  }
-}
 /* HABILIDES */
 .imgHabilidades {
   display: flex;
@@ -330,6 +298,7 @@ table thead {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+
 }
 #portafolio span {
   font-size: large;
@@ -346,8 +315,9 @@ table thead {
   text-align: center;
   font-size: large;
   max-height: fit-content;
-  border: var(--color-primary) 1px solid;
   border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 1px 5px 0px var(--color-secundary-dark);
 }
 h5 {
   margin-bottom: 0;
@@ -370,6 +340,7 @@ h5 {
   margin-bottom: 1rem;
   box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.75);
   text-decoration: none;
+  color: black;
 }
 .accesos a:hover {
   background-color: var(--color-primary);
@@ -391,6 +362,8 @@ h5 {
 footer p {
   text-align: center;
   font-size: medium;
+  margin: 0;
+  padding-bottom: 2rem;
 }
 
 /* ICONOS  */
@@ -408,4 +381,52 @@ footer p {
   background-repeat: no-repeat;
   background-size: 3rem;
   width: fit-content;
+}
+@media (max-width: 992px) {
+  .containerAcercaDeMi {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    justify-content: end;
+  }
+  nav {
+    display: none;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .containerMenu {
+    padding-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  #nav{
+    align-items: flex-end;
+  }
+  .containerMenu img {
+    margin: 1rem 1.5rem 0 0;
+    cursor: pointer;
+  }
+  .hidden {
+    display: flex;
+  }
+  .rotate {
+    transform: rotate(-90deg);
+  }
+  .containerExperiencia{
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerExperiencia div:first-child{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  .containerExperiencia div:last-of-type{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
 }
