@@ -45,8 +45,7 @@ header {
   height: 3rem;
 }
 #containerNav {
-  margin-top: 0.5rem;
-  align-items: center;
+  padding-top: 0.5rem;
 }
 .modoClaro {
   background-color: var(--color-primary);
@@ -429,5 +428,8 @@ footer p {
   .containerExperiencia div:last-of-type{
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
+  }
+  #containerNav {
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.75); 
   }
 }
