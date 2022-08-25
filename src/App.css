@@ -36,9 +36,6 @@ nav a:hover {
 header {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  padding-right: 1.5rem;
-  z-index: 1;
   background-color: white;
 }
 #containerNav button {
@@ -46,6 +43,10 @@ header {
   border: none;
   width: 3rem;
   height: 3rem;
+}
+#containerNav {
+  margin-top: 0.5rem;
+  align-items: center;
 }
 .modoClaro {
   background-color: var(--color-primary);
@@ -307,6 +308,7 @@ h1 span:nth-child(14) {
 }
 .logo {
   width: 6rem;
+  margin-left: 1rem;
 }
 .containerPortafolio {
   display: flex;
