@@ -15,8 +15,8 @@ function App() {
       <Navigator />
       <Home />
       <AcercaDeMi />
-      <Habilidades />
       <Experiencia />
+      <Habilidades />
       <Portafolio />
       <Contacto />
       <Footer />
