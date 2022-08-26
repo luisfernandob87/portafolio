@@ -108,6 +108,16 @@ h2 {
   text-align: center;
   padding-top: 9rem;
 }
+/* .avatar {
+  background-image: url(./img/avatar_circular.svg);
+  width: 100%;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.avatar:hover {
+  background-image: url(./img/avatar_cerrando_ojo.svg);
+} */
 .enlacesHome {
   display: flex;
   flex-wrap: wrap;

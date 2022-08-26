@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <div className="info">
+        <div className="avatar"></div>
         <img src={foto} alt="foto" id="fotoPerfil" />
         <h1>
           Hola, soy{" "}
