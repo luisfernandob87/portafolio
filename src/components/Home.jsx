@@ -28,7 +28,7 @@ const Home = () => {
             <span>s</span>
           </div>
         </h1>
-        <h2>Desarrollador Web Front End</h2>
+        <h2>Desarrollador Full Stack</h2>
       </div>
       <div className="enlacesHome">
         <a
