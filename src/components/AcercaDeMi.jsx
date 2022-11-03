@@ -9,8 +9,8 @@ const AcercaDeMi = () => {
         <p>
           Profesional informático con más de 15 años de experiencia en
           diferentes posiciones enfocadas a la tecnología. Me apasiona el
-          desarrollo por el hecho de poder crear productos o servicios
-          tecnológicos basados en una idea.
+          desarrollo y crear productos o servicios tecnológicos basados en una
+          idea.
         </p>
         <img src={programando} alt="Imagen_programando" />
       </div>
