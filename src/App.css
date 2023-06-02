@@ -34,9 +34,17 @@ nav a:hover {
 }
 header {
   display: flex;
-  justify-content: space-between;
   background-color: white;
+  justify-content: space-around;
+  /*  */
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
+
 #containerNav button {
   background-color: transparent;
   border: none;
@@ -77,6 +85,7 @@ h2 {
 
 /* HOME */
 .info {
+  margin-top: 50px;
   text-align: center;
   padding-top: 5rem;
 }
@@ -441,5 +450,8 @@ footer p {
   }
   #containerNav {
     box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  }
+  header {
+    justify-content: space-between;
   }
 }

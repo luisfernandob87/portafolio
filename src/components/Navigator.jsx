@@ -15,30 +15,30 @@ const Navigator = () => {
     const contacto = document.querySelector("#contacto");
     const luna = document.querySelector("#icon");
     const footer = document.querySelector("#footer");
-    const nav = document.querySelector('#containerNav')
+    const nav = document.querySelector("#containerNav");
 
-    
     if (
       seccionAcercaDeMi.classList == "modoOscuroSection" &&
-      contacto.classList == "modoOscuroSection" && footer.classList =="modoOscuroSection"
+      contacto.classList == "modoOscuroSection" &&
+      footer.classList == "modoOscuroSection"
     ) {
       seccionAcercaDeMi.classList.replace("modoOscuroSection", "modoClaro");
       contacto.classList.replace("modoOscuroSection", "modoClaro");
-      footer.classList.replace("modoOscuroSection", "modoClaro")
+      footer.classList.replace("modoOscuroSection", "modoClaro");
     } else {
       seccionAcercaDeMi.classList.replace("modoClaro", "modoOscuroSection");
       contacto.classList.replace("modoClaro", "modoOscuroSection");
-      footer.classList.replace("modoClaro", "modoOscuroSection")
+      footer.classList.replace("modoClaro", "modoOscuroSection");
     }
 
     if (document.body.classList == "modoOscuro") {
       document.body.classList.remove("modoOscuro");
       luna.classList.replace("sol", "luna");
-      nav.classList.remove("modoOscuro")
+      nav.classList.remove("modoOscuro");
     } else {
       document.body.classList.add("modoOscuro");
       luna.classList.replace("luna", "sol");
-      nav.classList.add("modoOscuro")
+      nav.classList.add("modoOscuro");
     }
   };
 
