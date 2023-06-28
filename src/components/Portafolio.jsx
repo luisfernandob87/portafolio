@@ -1,5 +1,4 @@
 import React from "react";
-import tienda from "../img/tienda.png";
 import pokeapi from "../img/pokeapi.png";
 import rick from "../img/rick.png";
 import academloStore from "../img/academloStore.png";
@@ -15,7 +14,7 @@ import web from "../img/internet.png";
 const Portafolio = () => {
   return (
     <section id="portafolio">
-      <h4>Portafolio</h4>
+      <h6>Práctica</h6>
       <div>
         <div className="containerPortafolio">
           <h5>
@@ -130,4 +129,3 @@ const Portafolio = () => {
 };
 
 export default Portafolio;
-<h4>Portafolio</h4>;

@@ -8,24 +8,6 @@ const Experiencia = () => {
     <section id="experiencia">
       <div className="containerExperiencia">
         <div>
-          <img src={checklist} alt="icono_cheklist" />
-          <h5>2006 - 2009</h5>
-          <p>Técnico de Soporte</p>
-          <ul>
-            <li>Mantenimiento preventivo y correctivo. </li>
-            <li>Soporte a usuarios, infraestructura y conectividad.</li>
-          </ul>
-        </div>
-        <div>
-          <img src={laptop} alt="icono_laptop" />
-          <h5>2009 - 2018</h5>
-          <p>Ingeniero de Soporte</p>
-          <ul>
-            <li>Mantenimiento preventivo y correctivo. </li>
-            <li>Soporte a usuarios, infraestructura y conectividad.</li>
-          </ul>
-        </div>
-        <div>
           <img src={desktop} alt="icono_desktop" />
           <h5>2019 - 2023</h5>
           <p>Analista de Software</p>
@@ -38,6 +20,24 @@ const Experiencia = () => {
               compañías.
             </li>
             <li>Soporte a infraestructura y conectividad de herramienta.</li>
+          </ul>
+        </div>
+        <div>
+          <img src={laptop} alt="icono_laptop" />
+          <h5>2009 - 2018</h5>
+          <p>Ingeniero de Soporte</p>
+          <ul>
+            <li>Mantenimiento preventivo y correctivo. </li>
+            <li>Soporte a usuarios, infraestructura y conectividad.</li>
+          </ul>
+        </div>
+        <div>
+          <img src={checklist} alt="icono_cheklist" />
+          <h5>2006 - 2009</h5>
+          <p>Técnico de Soporte</p>
+          <ul>
+            <li>Mantenimiento preventivo y correctivo. </li>
+            <li>Soporte a usuarios, infraestructura y conectividad.</li>
           </ul>
         </div>
       </div>

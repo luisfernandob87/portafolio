@@ -8,6 +8,7 @@ import Habilidades from "./components/Habilidades";
 import Home from "./components/Home";
 import Navigator from "./components/Navigator";
 import Portafolio from "./components/Portafolio";
+import { Proyectos } from "./components/Proyectos";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AcercaDeMi />
       <Experiencia />
       <Habilidades />
+      <Proyectos />
       <Portafolio />
       <Contacto />
       <Footer />
