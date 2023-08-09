@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-import checklist from "../img/checklist.svg";
 import familyOffice from "../img/familyOffice.png";
 import llamadaAtencion from "../img/llamadaAtencionApp.png";
 import imagenes from "../img/imagenes.png";
@@ -23,16 +22,12 @@ import menuFamilyOffice from "../img/familyOffice/menu.png";
 import casosFamilyOffice from "../img/familyOffice/casosReportados.png";
 import servicioFamilyOffice from "../img/familyOffice/servicioDesplegable.png";
 import fechaFamilyOffice from "../img/familyOffice/ingresoFecha.png";
-import solicitudFamilyOffice from "../img/familyOffice/solicitudFamily.png";
-import solicitudLlamadas from "../img/llamadaAtencion/solicitudLlamadas.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 export const Proyectos = () => {
   const [open, setOpen] = React.useState(false);
   const [open2, setOpen2] = React.useState(false);
-  const [open3, setOpen3] = React.useState(false);
-  const [open4, setOpen4] = React.useState(false);
   return (
     <section id="portafolio">
       <h4>Portafolio</h4>
@@ -54,15 +49,6 @@ export const Proyectos = () => {
             className="previewProyectos"
           />
           <div className="accesos">
-            <a onClick={() => setOpen4(true)}>
-              <Lightbox
-                open={open4}
-                close={() => setOpen4(false)}
-                slides={[{ src: solicitudLlamadas }]}
-              />
-              <img src={checklist} alt="Logo_Check_List" className="logo" />
-              Solicitud
-            </a>
             <a onClick={() => setOpen(true)}>
               <Lightbox
                 open={open}
@@ -101,15 +87,6 @@ export const Proyectos = () => {
             className="previewProyectos"
           />
           <div className="accesos">
-            <a onClick={() => setOpen3(true)}>
-              <Lightbox
-                open={open3}
-                close={() => setOpen3(false)}
-                slides={[{ src: solicitudFamilyOffice }]}
-              />
-              <img src={checklist} alt="Logo_Check_List" className="logo" />
-              Solicitud
-            </a>
             <a onClick={() => setOpen2(true)}>
               <Lightbox
                 open={open2}
